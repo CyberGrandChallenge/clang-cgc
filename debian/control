@@ -1,0 +1,16 @@
+Source: clang-cgc
+Section: devel
+Priority: optional
+Maintainer: Brian Caswell <bmc@lungetech.com>
+Build-Depends: debhelper (>= 6.0.0), flex, bison, autoconf, perl, libtool, texinfo, autotools-dev (>= 20060702.1), lsb-release, patchutils, diffstat, xz-utils
+Standards-Version: 3.9.2
+Homepage: https://www.darpa.mil/cybergrandchallenge/
+
+Package: clang-cgc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: python
+Description: LLVM/Clang for CGC
+ The Low-Level Virtual Machine (LLVM) based clang compiler tool chain built and
+ packaged to support building DECREE challenge binaries for use within DARPA's
+ Cyber Grand Challenge.
