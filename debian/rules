@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+export DH_VERBOSE=1
+export CONCURRENCY_LEVEL=10
+export DEB_BUILD_OPTIONS=nocheck
+
+override_dh_auto_clean:
+	echo "not autocleaning, as make clean breaks autobuild"
+
+override_dh_auto_configure:
+	./configure CC=gcc CXX=g++ --prefix=/usr/i386-linux-cgc/ --disable-debug-symbols --disable-debug-runtime --enable-shared --with-cxx-include-32bit-dir=32
+
+%:
+	dh $@
