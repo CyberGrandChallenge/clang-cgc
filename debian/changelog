@@ -1,0 +1,11 @@
+clang-cgc (3.4-8387-cfe-rc3) UNRELEASED; urgency=low
+
+  * build
+
+ -- Brian Caswell <bmc@lungetech.com>  Fri, 18 Dec 2015 20:08:24 +0000
+
+clang-cgc (0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Brian Caswell <bmc@lungetech.com>  Wed, 05 Mar 2014 17:43:19 +0000
